@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+#about-me
+{
+  height: 400px;
+  overflow: auto;
+  display: flex;
+  flex-flow: row  nowrap;
+  box-shadow: gray 5px 5px 5px, gray -5px -5px 5px;
+}
+
+img
+{
+  max-width: 600px;
+  max-height: 500px;
+}
+
+h2
+{
+  margin-top: 30px;
+}
+
+#interest-container
+{
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 10px;
+}
+
+#interest-container a
+{
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 421px)
+{
+  #about-me, #interest-container
+  {
+    flex-flow: column;
+  }
+
+  h2
+  {
+    text-align: center;
+  }
+
+  #interest-container
+  {
+    align-items: center;
+  }
+}

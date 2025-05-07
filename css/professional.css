@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+#img-container
+{
+  display: flex;
+  justify-content: center;
+}
+
+img
+{
+  max-width: 600px;
+  max-height: 550px;
+}
+
+.areas > div
+{
+  display: grid;
+}
+
+@media all and (min-width: 422px)
+{
+  .areas > div > span
+  {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-areas:
+      "col1 col2 col3";
+  }
+
+  .col1
+  {
+    grid-area: col1;
+  }
+
+  .col2
+  {
+    grid-area: col2;
+  }
+
+  .col3
+  {
+    grid-area: col3;
+  }
+}
+
+@media screen and (max-width: 421px)
+{
+  img
+  {
+    max-width: 310px;
+    max-height: 260px;
+  }
+
+  .areas > div > span
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

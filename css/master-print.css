@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+@page 
+{
+  size: 8.5in 11in;
+  margin: 1in;
+}
+
+html
+{
+  font-size: 12pt;
+  color: black;
+}
+
+.noprint, header, footer
+{
+  display: none;
+}

@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+body
+{
+  min-width: 700px;
+}
+
+header
+{
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+h2
+{
+  font-size: 2rem;
+}
+
+#name
+{
+  margin-left: 15px;
+  font-size: 4rem;
+  color:blue;
+  font-family: BriemHand, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main
+{
+  min-height: 640px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+h1
+{
+  font-size: 8rem;
+}
+
+div > h1
+{
+  font-size: 5.5rem;
+  position: absolute;
+  top: 47%;
+  text-decoration: underline;
+}
+
+div
+{
+  align-self: center;
+  cursor: pointer;
+}
+
+div:hover
+{
+  filter: sepia(1);
+}
+
+#come-txt
+{
+  text-shadow: whitesmoke 5px 5px 5px, whitesmoke -5px -5px 5px;
+}
+
+img
+{
+  max-width: 350px;
+  max-height: 640px;
+  opacity: 40%;
+  border-radius: 5%;
+  box-shadow: black 5px 5px 10px, black -5px -5px 10px;
+}
+
+@media screen and (max-width: 421px)
+{
+  body
+  {
+    min-width: 40px;
+  }
+
+  main
+  {
+    min-height: 340px;
+  }
+
+  h1
+  {
+    font-size: 4rem;
+  }
+
+  div > h1
+  {
+    font-size: 3rem;
+  }
+
+  img
+  {
+    max-width: 150px;
+    max-height: 340px;
+  }
+}
